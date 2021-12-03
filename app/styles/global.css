@@ -114,6 +114,11 @@ input:where([type="search"]) {
   border-bottom: 1px solid var(--color-border);
 }
 
+.home-logo {
+  margin: 0;
+  font-size: 2rem;
+}
+
 .remix-app__header-content {
   display: flex;
   justify-content: space-between;
