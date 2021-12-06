@@ -133,6 +133,9 @@ function Layout({ children }: { children: React.ReactNode }) {
               <li>
                 <Link to="/calculator">Calculator</Link>
               </li>
+              <li>
+                <Link to="/images">Image Search</Link>
+              </li>
             </ul>
           </nav>
         </div>
