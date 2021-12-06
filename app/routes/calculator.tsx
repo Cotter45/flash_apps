@@ -1,5 +1,5 @@
 import type { LinksFunction } from "remix";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import calcStylesUrl from '~/styles/calculator.css';
 
