@@ -11,7 +11,7 @@
 
 .calc-container {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +21,76 @@
 .calc-shell {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
     height: 100%;
     border: 2px solid #f5f5f5;
     border-radius: 15px;
     background-color: lightgray;
+}
+
+.calc-display {
+    background-color: black;
+    width: 80%;
+    height: 15%;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+.calc-keypad {
+    display: grid;
+    width: 80%;
+    height: 70%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.calc-key {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.calc-key:hover {
+    will-change: background-color border-radius;
+    background-color: aqua;
+    border-radius: 0px;
+}
+
+.space {
+    visibility: hidden;
+}
+
+.top-row {
+    background-color: darkgray;
+}
+
+.top-row:hover {
+    background-color: black;
+}
+
+.operator {
+    background-color: orange;
+}
+
+.operator:hover {
+    background-color: red;
+}
+
+.double {
+    width: 200%;
 }
