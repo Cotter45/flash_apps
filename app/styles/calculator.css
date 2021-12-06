@@ -34,12 +34,19 @@
     background-color: black;
     width: 80%;
     height: 15%;
-    padding: 10px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-size: 2em;
+    word-break: break-all;
+    overflow: scroll;
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 .calc-keypad {
