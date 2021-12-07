@@ -88,7 +88,7 @@ export default function CanvasFun() {
                     lines.length < opts.count &&
                     Math.random() < opts.spawnChance
                   )
-                    lines.push(new (Line as any)());
+                    lines.push(new (Line as any));
 
                   lines.map(function (line: any) {
                     line.step();

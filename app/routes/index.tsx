@@ -22,7 +22,7 @@ export let loader: LoaderFunction = () => {
       },
       {
         to: "/canvas",
-        name: "HTML Canvas with react"
+        name: "HTML Canvas"
       }
     ]
   };
@@ -51,7 +51,8 @@ export default function Index() {
           This is a small website where I will periodically be building small
           apps with Typescript and React-Remix. These will be mostly simple things
           like a calculator or a simple todo list, just to get practice with Typescript 
-          and try some new things along the way.
+          and try some new things along the way. Not all of this is my code, ie. the canvas - 
+          I'm really just trying to get a handle on types and how to use them.
         </p>
         <p>
           This is my first time using React-Remix, so I'm not sure how it will go,
@@ -60,6 +61,7 @@ export default function Index() {
       </main>
       <aside>
         <h2>Apps In This App</h2>
+        <h3>Typescript practice</h3>
         <ul>
           {data.demos.map(demo => (
             <li key={demo.to} className="remix__page__resource">
@@ -68,6 +70,16 @@ export default function Index() {
               </Link>
             </li>
           ))}
+        </ul>
+        <h3>Remix-React practice</h3>
+        <ul>
+          {/* {data.demos.map(demo => (
+            <li key={demo.to} className="remix__page__resource">
+              <Link to={demo.to} prefetch="intent">
+                {demo.name}
+              </Link>
+            </li>
+          ))} */}
         </ul>
       </aside>
     </div>

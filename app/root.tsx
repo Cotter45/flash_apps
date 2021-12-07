@@ -130,7 +130,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/calculator">Calculator</Link>
               </li>
               <li>
@@ -138,7 +138,7 @@ function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li>
                 <Link to="/canvas">Canvas</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
