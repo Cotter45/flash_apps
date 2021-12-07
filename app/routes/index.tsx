@@ -17,12 +17,12 @@ export let loader: LoaderFunction = () => {
         name: "Calculator"
       },
       {
-        to: "demos/about",
-        name: "Nested Routes, CSS loading/unloading"
+        to: "/images",
+        name: "Images, efficient loading and effects"
       },
       {
-        to: "demos/params",
-        name: "URL Params and Error Boundaries"
+        to: "/canvas",
+        name: "HTML Canvas with react"
       }
     ]
   };
