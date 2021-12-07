@@ -35,12 +35,12 @@ export default function Images() {
             });
             const json = await response.json();
             setImages(json);
-            setLoaded(true);
+            console.log('images')
         })()
+        setLoaded(true);
     }, [loaded]);
 
 
-    console.log(images);
 
     return (
         <div>
